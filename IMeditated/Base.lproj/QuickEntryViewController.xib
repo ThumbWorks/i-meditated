@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuickEntryViewController" customModule="IMeditated" customModuleProvider="target">
+            <connections>
+                <outlet property="customButton" destination="rwi-cy-0RC" id="1Be-qQ-RGd"/>
+                <outlet property="todayDurationLabel" destination="pcI-WX-1Az" id="jqK-Uy-FV9"/>
+                <outlet property="todayTextLabel" destination="nGV-SJ-Zdw" id="gby-H6-VqV"/>
+                <outlet property="view" destination="9hH-n3-1RH" id="2RI-Ee-EDy"/>
+                <outlet property="yesterdayDurationLabel" destination="87V-zT-Z8i" id="UnH-ZR-Nk0"/>
+                <outlet property="yesterdayTextLabel" destination="5C8-o1-Gki" id="41z-ig-gKQ"/>
+                <outletCollection property="quickEntryButtons" destination="6o0-VR-SDJ" collectionClass="NSMutableArray" id="ToP-V2-xUO"/>
+                <outletCollection property="quickEntryButtons" destination="BCu-gq-dro" collectionClass="NSMutableArray" id="FrD-Rk-maZ"/>
+                <outletCollection property="quickEntryButtons" destination="GcE-L8-Pux" collectionClass="NSMutableArray" id="2N5-ga-ujR"/>
+                <outletCollection property="quickEntryButtons" destination="TYy-mE-azJ" collectionClass="NSMutableArray" id="rpU-Yb-xK1"/>
+                <outletCollection property="quickEntryButtons" destination="A17-wI-7aO" collectionClass="NSMutableArray" id="R3c-zh-NYO"/>
+                <outletCollection property="quickEntryButtons" destination="j3W-ae-VBJ" collectionClass="NSMutableArray" id="250-8l-0xB"/>
+                <outletCollection property="quickEntryButtons" destination="hoh-2q-jQu" collectionClass="NSMutableArray" id="Oh2-63-Rt8"/>
+                <outletCollection property="quickEntryButtons" destination="pwP-H8-Kqd" collectionClass="NSMutableArray" id="Thn-rJ-csM"/>
+                <outletCollection property="quickEntryButtons" destination="oxQ-BL-MNb" collectionClass="NSMutableArray" id="Cpc-py-zif"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="9hH-n3-1RH">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwi-cy-0RC">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="Custom Duration"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Custom"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o0-VR-SDJ" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1 Hour"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6o0-VR-SDJ" secondAttribute="height" multiplier="1:1" id="0vT-zK-TZC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="1 Hr"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCu-gq-dro" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1.5 Hours"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BCu-gq-dro" secondAttribute="height" multiplier="1:1" id="RUh-oL-SH3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="1.5 Hrs"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="90"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcE-L8-Pux" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="2 Hours"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GcE-L8-Pux" secondAttribute="height" multiplier="1:1" id="7dU-Vb-z9R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="2 Hrs"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="120"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYy-mE-azJ" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="20 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TYy-mE-azJ" secondAttribute="height" multiplier="1:1" id="63N-3U-O7g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="20 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A17-wI-7aO" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="30 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="A17-wI-7aO" secondAttribute="height" multiplier="1:1" id="JCn-2p-KJB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="30 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3W-ae-VBJ" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="45 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="j3W-ae-VBJ" secondAttribute="height" multiplier="1:1" id="XXv-Ek-xb1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="45 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoh-2q-jQu" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="5 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hoh-2q-jQu" secondAttribute="height" multiplier="1:1" id="OiL-HC-Ob4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="5 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-H8-Kqd" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="10 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pwP-H8-Kqd" secondAttribute="height" multiplier="1:1" id="GYS-E5-7ER"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="10 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-BL-MNb" customClass="MinutesButton" customModule="IMeditated" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="15 Minutes"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oxQ-BL-MNb" secondAttribute="height" multiplier="1:1" id="gae-GU-gmX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="15 Min"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="1000" text="4 hrs, 20 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pcI-WX-1Az">
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <attributedString key="userComments">
+                        <fragment content="No need to localize">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="56">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="84">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="112">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="140">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="168">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="196">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="224">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="252">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="280">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="308">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="336">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-SJ-Zdw">
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="40 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87V-zT-Z8i">
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <attributedString key="userComments">
+                        <fragment content="No need to localize">
+                            <attributes>
+                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="56">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="84">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="112">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="140">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="168">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="196">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="224">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="252">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="280">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="308">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="336">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C8-o1-Gki">
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A17-wI-7aO" firstAttribute="bottom" secondItem="TYy-mE-azJ" secondAttribute="bottom" id="1Wg-hk-Ov2"/>
+                <constraint firstItem="nGV-SJ-Zdw" firstAttribute="baseline" secondItem="pcI-WX-1Az" secondAttribute="baseline" id="3I1-Wz-PET"/>
+                <constraint firstAttribute="trailingMargin" secondItem="rwi-cy-0RC" secondAttribute="trailing" id="3VM-hj-iz4"/>
+                <constraint firstAttribute="trailingMargin" secondItem="j3W-ae-VBJ" secondAttribute="trailing" id="6So-HU-y66"/>
+                <constraint firstAttribute="leadingMargin" secondItem="pcI-WX-1Az" secondAttribute="leading" id="6XG-9D-orT"/>
+                <constraint firstItem="A17-wI-7aO" firstAttribute="leading" secondItem="TYy-mE-azJ" secondAttribute="trailing" constant="8" id="6aX-mj-mt9"/>
+                <constraint firstItem="oxQ-BL-MNb" firstAttribute="width" secondItem="oxQ-BL-MNb" secondAttribute="height" multiplier="1:1" id="6r6-Xj-Ovh"/>
+                <constraint firstItem="j3W-ae-VBJ" firstAttribute="bottom" secondItem="TYy-mE-azJ" secondAttribute="bottom" id="7uL-Vd-h9R"/>
+                <constraint firstItem="TYy-mE-azJ" firstAttribute="width" secondItem="TYy-mE-azJ" secondAttribute="height" multiplier="1:1" id="CTa-Lz-4Gw"/>
+                <constraint firstItem="6o0-VR-SDJ" firstAttribute="top" secondItem="TYy-mE-azJ" secondAttribute="bottom" constant="8" id="EId-c2-A6p"/>
+                <constraint firstItem="nGV-SJ-Zdw" firstAttribute="leading" secondItem="pcI-WX-1Az" secondAttribute="trailing" constant="8" id="EZX-td-oc0"/>
+                <constraint firstItem="oxQ-BL-MNb" firstAttribute="leading" secondItem="pwP-H8-Kqd" secondAttribute="trailing" constant="8" id="G8Z-w7-GcD"/>
+                <constraint firstItem="BCu-gq-dro" firstAttribute="width" secondItem="6o0-VR-SDJ" secondAttribute="width" id="Gtg-WT-9JT"/>
+                <constraint firstAttribute="leadingMargin" secondItem="rwi-cy-0RC" secondAttribute="leading" id="Ixk-OO-JuF"/>
+                <constraint firstItem="pwP-H8-Kqd" firstAttribute="width" secondItem="pwP-H8-Kqd" secondAttribute="height" multiplier="1:1" id="J5c-da-vvl"/>
+                <constraint firstItem="oxQ-BL-MNb" firstAttribute="width" secondItem="pwP-H8-Kqd" secondAttribute="width" id="Lmd-bU-B82"/>
+                <constraint firstItem="rwi-cy-0RC" firstAttribute="top" secondItem="GcE-L8-Pux" secondAttribute="bottom" constant="8" id="PKI-gO-cD3"/>
+                <constraint firstItem="rwi-cy-0RC" firstAttribute="height" secondItem="6o0-VR-SDJ" secondAttribute="height" multiplier="1/2" id="PYg-1e-B5h"/>
+                <constraint firstItem="GcE-L8-Pux" firstAttribute="width" secondItem="BCu-gq-dro" secondAttribute="width" id="QNc-t6-tjJ"/>
+                <constraint firstItem="5C8-o1-Gki" firstAttribute="baseline" secondItem="87V-zT-Z8i" secondAttribute="baseline" id="TaJ-R7-C9O"/>
+                <constraint firstItem="pwP-H8-Kqd" firstAttribute="width" secondItem="hoh-2q-jQu" secondAttribute="width" id="Uv1-Kg-7cu"/>
+                <constraint firstItem="hoh-2q-jQu" firstAttribute="width" secondItem="hoh-2q-jQu" secondAttribute="height" multiplier="1:1" id="VCO-Is-hmY"/>
+                <constraint firstItem="pwP-H8-Kqd" firstAttribute="width" secondItem="pwP-H8-Kqd" secondAttribute="height" multiplier="1:1" id="Vdb-C2-55q"/>
+                <constraint firstAttribute="trailingMargin" secondItem="oxQ-BL-MNb" secondAttribute="trailing" id="Vdk-QC-qcH"/>
+                <constraint firstItem="j3W-ae-VBJ" firstAttribute="leading" secondItem="A17-wI-7aO" secondAttribute="trailing" constant="8" id="YMX-eY-XrH"/>
+                <constraint firstItem="87V-zT-Z8i" firstAttribute="top" secondItem="pcI-WX-1Az" secondAttribute="bottom" constant="0.66666666666662877" id="ZSk-An-LmS"/>
+                <constraint firstItem="BCu-gq-dro" firstAttribute="leading" secondItem="6o0-VR-SDJ" secondAttribute="trailing" constant="8" id="coV-7C-JRh"/>
+                <constraint firstItem="5C8-o1-Gki" firstAttribute="leading" secondItem="87V-zT-Z8i" secondAttribute="trailing" constant="8" id="dem-a3-jAR"/>
+                <constraint firstItem="TYy-mE-azJ" firstAttribute="leading" secondItem="6o0-VR-SDJ" secondAttribute="leading" id="dmk-PT-bg3"/>
+                <constraint firstItem="GcE-L8-Pux" firstAttribute="leading" secondItem="BCu-gq-dro" secondAttribute="trailing" constant="8" id="eXe-2Y-zFe"/>
+                <constraint firstItem="pwP-H8-Kqd" firstAttribute="bottom" secondItem="hoh-2q-jQu" secondAttribute="bottom" id="fMW-jn-Qm5"/>
+                <constraint firstItem="oxQ-BL-MNb" firstAttribute="width" secondItem="oxQ-BL-MNb" secondAttribute="height" multiplier="1:1" id="g1b-Wi-2wY"/>
+                <constraint firstAttribute="bottom" secondItem="rwi-cy-0RC" secondAttribute="bottom" constant="16" id="hys-xd-DeJ"/>
+                <constraint firstItem="rwi-cy-0RC" firstAttribute="top" secondItem="6o0-VR-SDJ" secondAttribute="bottom" constant="8" id="krf-Ad-yv4"/>
+                <constraint firstItem="pcI-WX-1Az" firstAttribute="top" secondItem="9hH-n3-1RH" secondAttribute="bottomMargin" multiplier="1/8" priority="998" id="lAX-GH-BJW"/>
+                <constraint firstItem="j3W-ae-VBJ" firstAttribute="width" secondItem="A17-wI-7aO" secondAttribute="width" id="laC-qF-EzK"/>
+                <constraint firstItem="hoh-2q-jQu" firstAttribute="leading" secondItem="TYy-mE-azJ" secondAttribute="leading" id="lqL-Y9-nGA"/>
+                <constraint firstItem="hoh-2q-jQu" firstAttribute="width" secondItem="hoh-2q-jQu" secondAttribute="height" multiplier="1:1" id="nWZ-7v-ZwN"/>
+                <constraint firstItem="oxQ-BL-MNb" firstAttribute="bottom" secondItem="hoh-2q-jQu" secondAttribute="bottom" id="nYn-0x-qZs"/>
+                <constraint firstItem="hoh-2q-jQu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5C8-o1-Gki" secondAttribute="bottom" constant="20" id="ngN-dO-Kvv"/>
+                <constraint firstAttribute="trailingMargin" secondItem="GcE-L8-Pux" secondAttribute="trailing" id="oUE-tv-yli"/>
+                <constraint firstItem="6o0-VR-SDJ" firstAttribute="leading" secondItem="rwi-cy-0RC" secondAttribute="leading" id="ozC-cT-P17"/>
+                <constraint firstItem="A17-wI-7aO" firstAttribute="width" secondItem="TYy-mE-azJ" secondAttribute="width" id="ozs-kF-gPa"/>
+                <constraint firstItem="87V-zT-Z8i" firstAttribute="leading" secondItem="pcI-WX-1Az" secondAttribute="leading" multiplier="2" id="r1F-SG-nCE"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nGV-SJ-Zdw" secondAttribute="trailing" id="rDv-j6-JTG"/>
+                <constraint firstItem="rwi-cy-0RC" firstAttribute="top" secondItem="BCu-gq-dro" secondAttribute="bottom" constant="8" id="s6J-7A-Ecv"/>
+                <constraint firstItem="pwP-H8-Kqd" firstAttribute="leading" secondItem="hoh-2q-jQu" secondAttribute="trailing" constant="8" id="shf-tC-Ps7"/>
+                <constraint firstItem="j3W-ae-VBJ" firstAttribute="width" secondItem="j3W-ae-VBJ" secondAttribute="height" multiplier="1:1" id="tFG-5v-czA"/>
+                <constraint firstItem="A17-wI-7aO" firstAttribute="width" secondItem="A17-wI-7aO" secondAttribute="height" multiplier="1:1" id="ttG-BZ-lxo"/>
+                <constraint firstItem="TYy-mE-azJ" firstAttribute="top" secondItem="hoh-2q-jQu" secondAttribute="bottom" constant="8" id="xrj-FU-CYR"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="-455" y="-26"/>
+        </view>
+    </objects>
+</document>

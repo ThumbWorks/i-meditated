@@ -1,0 +1,56 @@
+PODS:
+  - Result (3.0.0-alpha.1)
+  - RxBlocking (3.0.0.alpha.1):
+    - RxSwift (~> 3.0.0.alpha.1)
+  - RxCocoa (3.0.0.alpha.1):
+    - RxSwift (~> 3.0.0.alpha.1)
+  - RxSwift (3.0.0.alpha.1)
+  - RxTests (3.0.0.alpha.1):
+    - RxSwift (~> 3.0.0.alpha.1)
+
+DEPENDENCIES:
+  - Result (from `git@github.com:antitypical/Result.git`)
+  - RxBlocking (from `git@github.com:ReactiveX/RxSwift.git`)
+  - RxCocoa (from `git@github.com:ReactiveX/RxSwift.git`)
+  - RxSwift (from `git@github.com:ReactiveX/RxSwift.git`)
+  - RxTests (from `git@github.com:ReactiveX/RxSwift.git`)
+
+EXTERNAL SOURCES:
+  Result:
+    :git: git@github.com:antitypical/Result.git
+  RxBlocking:
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxCocoa:
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxSwift:
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxTests:
+    :git: git@github.com:ReactiveX/RxSwift.git
+
+CHECKOUT OPTIONS:
+  Result:
+    :commit: cc1699dbd812c71bee7c44c8cbd75497713bc279
+    :git: git@github.com:antitypical/Result.git
+  RxBlocking:
+    :commit: 900035d78b37e440b9098d0ffac28e0d8b8cc660
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxCocoa:
+    :commit: 900035d78b37e440b9098d0ffac28e0d8b8cc660
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxSwift:
+    :commit: 900035d78b37e440b9098d0ffac28e0d8b8cc660
+    :git: git@github.com:ReactiveX/RxSwift.git
+  RxTests:
+    :commit: 900035d78b37e440b9098d0ffac28e0d8b8cc660
+    :git: git@github.com:ReactiveX/RxSwift.git
+
+SPEC CHECKSUMS:
+  Result: 7368f351c7e2ed4d3fa48e852d3ab12a27f46e9a
+  RxBlocking: 7ef3e27c267d71ec7d69165dafcf3408a23c7507
+  RxCocoa: 37b3b167eaa14446a315493ef6a188b277942b15
+  RxSwift: 0bccfee1e979c1b72a5d1dffdf96119303b5d111
+  RxTests: c6366958f385debc28202dbe7480f96fa5fef131
+
+PODFILE CHECKSUM: b7b53d0366249b2df7de9499fbd541c0df20dcfb
+
+COCOAPODS: 1.0.1

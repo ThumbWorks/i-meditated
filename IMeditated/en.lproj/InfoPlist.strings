@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  IMeditated
+
+  Created by Bob Spryn on 8/9/16.
+  Copyright © 2016 Thumbworks. All rights reserved.
+*/
+
+CFBundleName = "I Meditated";
+CFBundleDisplayName = "I Meditated";

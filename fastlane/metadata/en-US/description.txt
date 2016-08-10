@@ -1,0 +1,9 @@
+"I Meditated" is a small utility app for entering mindful minutes into HealthKit.
+
+It is for those of us who are zen enough to not need to use an app actively during meditation, but not so zen that we don't want the credit for it. 
+
+Simply tap the amount of time you meditated, and “I Meditated” will attempt to slot it in to the day. It goes to some special effort not to enter overlapping meditations. In case you forgot to enter your meditation earlier in the day, just tap multiple times.
+
+Built as a technical demo of one type of reactive programming architecture using RxSwift.
+
+The code is open source, available at https://github.com/ThumbWorks/i-meditated

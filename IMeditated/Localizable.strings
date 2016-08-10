@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  IMeditated
+
+  Created by Bob Spryn on 8/18/16.
+  Copyright © 2016 Thumbworks. All rights reserved.
+*/
+
+"close-button" = "Close";
+"all-meditations" = "All Meditations";
+"custom-sample" = "Custom Sample";
+"edit-sample" = "Edit Sample";

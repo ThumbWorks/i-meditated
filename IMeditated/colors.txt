@@ -1,0 +1,5 @@
+DutchWhite: #EDD3BB
+SpicyMix: #75604B
+LapisLazuli: #145C9E
+DarkImperialBlue: #0B4F6C
+RichBlack: #020202
